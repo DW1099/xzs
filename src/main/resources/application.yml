@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+
+
+Spring:
+  profiles:
+    active: dev
+  datasource:
+    hikari:
+      idle-timeout: 600000
+      max-lifetime: 1800000

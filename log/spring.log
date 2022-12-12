@@ -1,0 +1,155 @@
+2022-12-12 12:50:42.954  INFO 32012 --- [restartedMain] com.example.demo.Demo3Application        : Starting Demo3Application using Java 1.8.0_151 on pw0035227 with PID 32012 (D:\learn code\java\SpringSecurityLearning-master\demo3\target\classes started by pw0035227 in D:\learn code\java\SpringSecurityLearning-master\demo3)
+2022-12-12 12:50:42.958  INFO 32012 --- [restartedMain] com.example.demo.Demo3Application        : The following 1 profile is active: "dev"
+2022-12-12 12:50:43.000  INFO 32012 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-12 12:50:43.000  INFO 32012 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-12 12:50:43.604  WARN 32012 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2022-12-12 12:50:44.005  INFO 32012 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-12 12:50:44.013  INFO 32012 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-12 12:50:44.013  INFO 32012 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-12 12:50:44.100  INFO 32012 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-12 12:50:44.101  INFO 32012 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1100 ms
+2022-12-12 12:50:44.393  WARN 32012 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+2022-12-12 12:50:44.395  INFO 32012 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-12 12:50:44.405  INFO 32012 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-12 12:50:44.429 ERROR 32012 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.7.6.jar:2.7.6]
+	at com.example.demo.Demo3Application.main(Demo3Application.java:10) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_151]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.24.jar:5.3.24]
+	... 24 common frames omitted
+Caused by: java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.util.Assert.state(Assert.java:97) ~[spring-core-5.3.24.jar:5.3.24]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.determineDriverClassName(DataSourceProperties.java:171) ~[spring-boot-autoconfigure-2.7.6.jar:2.7.6]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.initializeDataSourceBuilder(DataSourceProperties.java:123) ~[spring-boot-autoconfigure-2.7.6.jar:2.7.6]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration.createDataSource(DataSourceConfiguration.java:48) ~[spring-boot-autoconfigure-2.7.6.jar:2.7.6]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari.dataSource(DataSourceConfiguration.java:90) ~[spring-boot-autoconfigure-2.7.6.jar:2.7.6]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_151]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.24.jar:5.3.24]
+	... 25 common frames omitted
+
+2022-12-12 14:02:42.527  INFO 31440 --- [restartedMain] com.example.demo.Demo3Application        : Starting Demo3Application using Java 1.8.0_151 on pw0035227 with PID 31440 (D:\learn code\java\SpringSecurityLearning-master\demo3\target\classes started by pw0035227 in D:\learn code\java\SpringSecurityLearning-master\demo3)
+2022-12-12 14:02:42.529  INFO 31440 --- [restartedMain] com.example.demo.Demo3Application        : The following 1 profile is active: "dev"
+2022-12-12 14:02:42.565  INFO 31440 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-12 14:02:42.565  INFO 31440 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-12 14:02:43.160  WARN 31440 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2022-12-12 14:02:43.551  INFO 31440 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-12 14:02:43.559  INFO 31440 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-12 14:02:43.559  INFO 31440 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-12 14:02:43.647  INFO 31440 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-12 14:02:43.647  INFO 31440 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1081 ms
+2022-12-12 14:02:45.121  WARN 31440 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration': Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2022-12-12 14:02:45.123  INFO 31440 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-12 14:02:45.133  INFO 31440 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-12 14:02:45.149 ERROR 31440 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌──->──┐
+|  com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration
+└──<-──┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2022-12-12 14:09:25.628  INFO 32660 --- [restartedMain] com.example.demo.Demo3Application        : Starting Demo3Application using Java 1.8.0_151 on pw0035227 with PID 32660 (D:\learn code\java\SpringSecurityLearning-master\demo3\target\classes started by pw0035227 in D:\learn code\java\SpringSecurityLearning-master\demo3)
+2022-12-12 14:09:25.630  INFO 32660 --- [restartedMain] com.example.demo.Demo3Application        : The following 1 profile is active: "dev"
+2022-12-12 14:09:25.674  INFO 32660 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-12 14:09:25.675  INFO 32660 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-12 14:09:26.310  WARN 32660 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2022-12-12 14:09:26.696  INFO 32660 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-12 14:09:26.705  INFO 32660 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-12 14:09:26.705  INFO 32660 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-12 14:09:26.794  INFO 32660 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-12 14:09:26.794  INFO 32660 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1117 ms
+2022-12-12 14:09:27.996  WARN 32660 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: f8f78c63-e026-4128-ab3b-48f025ff7971
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-12-12 14:09:30.198  INFO 32660 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1891535b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7d5c98ed, org.springframework.security.web.context.SecurityContextPersistenceFilter@4715d7c0, org.springframework.security.web.header.HeaderWriterFilter@4b68126a, org.springframework.security.web.csrf.CsrfFilter@f000611, org.springframework.security.web.authentication.logout.LogoutFilter@732ce891, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@67f89757, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2afc1b66, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@24756595, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@e0299b5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@13d1e30e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1aec1312, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4885888f, org.springframework.security.web.session.SessionManagementFilter@5f11908e, org.springframework.security.web.access.ExceptionTranslationFilter@591ba6c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4d2403b6]
+2022-12-12 14:09:30.299  INFO 32660 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-12 14:09:30.632  INFO 32660 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-12 14:09:30.779  INFO 32660 --- [restartedMain] com.example.demo.Demo3Application        : Started Demo3Application in 5.578 seconds (JVM running for 6.311)
+2022-12-12 14:10:05.281  INFO 32660 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-12 14:10:05.282  INFO 32660 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-12 14:10:05.282  INFO 32660 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-12-12 14:15:33.399  INFO 35748 --- [restartedMain] com.example.demo.Demo3Application        : Starting Demo3Application using Java 1.8.0_151 on pw0035227 with PID 35748 (D:\learn code\java\SpringSecurityLearning-master\demo3\target\classes started by pw0035227 in D:\learn code\java\SpringSecurityLearning-master\demo3)
+2022-12-12 14:15:33.401  INFO 35748 --- [restartedMain] com.example.demo.Demo3Application        : The following 1 profile is active: "dev"
+2022-12-12 14:15:33.436  INFO 35748 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-12 14:15:33.436  INFO 35748 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-12 14:15:34.044  WARN 35748 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2022-12-12 14:15:34.445  INFO 35748 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-12 14:15:34.454  INFO 35748 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-12 14:15:34.454  INFO 35748 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-12 14:15:34.538  INFO 35748 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-12 14:15:34.539  INFO 35748 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1102 ms
+2022-12-12 14:15:35.154  INFO 35748 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4482e049, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@27a93cb2, org.springframework.security.web.context.SecurityContextPersistenceFilter@7f6b3fc3, org.springframework.security.web.header.HeaderWriterFilter@66773ac4, org.springframework.security.web.csrf.CsrfFilter@5f3cb488, org.springframework.security.web.authentication.logout.LogoutFilter@4fbaa86a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@594c7498, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2a4fb7b2, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@46b1a6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@77ce5bc9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5174217e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@63dc5c2e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@aa60c3b, org.springframework.security.web.session.SessionManagementFilter@a3788d8, org.springframework.security.web.access.ExceptionTranslationFilter@5e481e11, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4f83a024]
+2022-12-12 14:15:35.194  INFO 35748 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-12 14:15:35.219  INFO 35748 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-12 14:15:35.228  INFO 35748 --- [restartedMain] com.example.demo.Demo3Application        : Started Demo3Application in 2.221 seconds (JVM running for 2.964)
+2022-12-12 14:16:28.677  INFO 35748 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-12 14:16:28.677  INFO 35748 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-12 14:16:28.678  INFO 35748 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-12-12 14:31:13.310  INFO 31860 --- [restartedMain] com.example.demo.Demo3Application        : Starting Demo3Application using Java 1.8.0_151 on pw0035227 with PID 31860 (D:\learn code\java\SpringSecurityLearning-master\demo3\target\classes started by pw0035227 in D:\learn code\java\SpringSecurityLearning-master\demo3)
+2022-12-12 14:31:13.312  INFO 31860 --- [restartedMain] com.example.demo.Demo3Application        : The following 1 profile is active: "dev"
+2022-12-12 14:31:13.352  INFO 31860 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-12 14:31:13.352  INFO 31860 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-12 14:31:14.152  WARN 31860 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2022-12-12 14:31:14.513  WARN 31860 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2022-12-12 14:31:14.533  INFO 31860 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2022-12-12 14:31:14.533  INFO 31860 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1180 ms
+2022-12-12 14:31:15.194  INFO 31860 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@c67bba1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1ae61ab0, org.springframework.security.web.context.SecurityContextPersistenceFilter@3de03716, org.springframework.security.web.header.HeaderWriterFilter@1563e741, org.springframework.security.web.csrf.CsrfFilter@61c95ec7, org.springframework.security.web.authentication.logout.LogoutFilter@310ce6ab, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4324c829, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2688197e, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@543fcfd2, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@23927667, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@423af28c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4a351fbb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@213a1a47, org.springframework.security.web.session.SessionManagementFilter@70c21771, org.springframework.security.web.access.ExceptionTranslationFilter@74417336, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@548aa1ed]
+2022-12-12 14:31:15.234  INFO 31860 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-12 14:31:15.254  INFO 31860 --- [restartedMain] io.undertow                              : starting server: Undertow - 2.2.20.Final
+2022-12-12 14:31:15.259  INFO 31860 --- [restartedMain] org.xnio                                 : XNIO version 3.8.7.Final
+2022-12-12 14:31:15.265  INFO 31860 --- [restartedMain] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.7.Final
+2022-12-12 14:31:15.294  INFO 31860 --- [restartedMain] org.jboss.threads                        : JBoss Threads version 3.1.0.Final
+2022-12-12 14:31:15.323  INFO 31860 --- [restartedMain] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 8080 (http)
+2022-12-12 14:31:15.331  INFO 31860 --- [restartedMain] com.example.demo.Demo3Application        : Started Demo3Application in 2.423 seconds (JVM running for 3.387)
+2022-12-12 14:31:26.994  INFO 31860 --- [XNIO-1 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-12 14:31:26.995  INFO 31860 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-12 14:31:26.997  INFO 31860 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-12-12 14:31:46.571  INFO 31860 --- [SpringApplicationShutdownHook] io.undertow                              : stopping server: Undertow - 2.2.20.Final
+2022-12-12 14:31:46.574  INFO 31860 --- [SpringApplicationShutdownHook] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
