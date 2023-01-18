@@ -1,5 +1,6 @@
 package com.example.demo.viewmodel.admin.user;
 
+
 import com.example.demo.base.BasePage;
 
 public class UserPageRequestVM extends BasePage {
@@ -22,5 +23,4 @@ public class UserPageRequestVM extends BasePage {
     public void setRole(Integer role) {
         this.role = role;
     }
-
 }
